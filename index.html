@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="container">
         <div class="box-container">
             <form action="">
                 <h1 class="title">Conversor de Temperatura</h1>
                 <fieldset class="calculator_value">
                     <legend>Graus</legend>
-                    <input type="number"
-                    id="input_value" name="value">
+                    <input type="number" id="input_value" name="value">
                     <select name="input id=input">
-                     <option value="celsius">Celsius(&degC)</option>   
-                    <option
-                    value="fahrenheit">Fahrenheit (&degF)</option>
-                    
+                        <option value="celsius">Celsius (&degC)</option>
+                        <option value="fahrenheit">Fahrenheit (&degF)</option>
+
                     </select>
                 </fieldset>
+
+                <fieldset class="calculator_value">
+                    <legend>Converter para</legend>
+
+                    <select name="output" id="output">
+                        <option value="celsius">
+                            Celsius (&degC)
+                        </option>
+                        <option value="fahrenheit">Fahrenheit (&degF)</option>
+                
+                </select>
+                    </fieldset>
+                    <div class="calculator_value">
+                    </div>
+                    <div class="btn">
+                        <button type="button"
+                        id="Convert">Converter</button>
+
+                        <button id="Erase">Limpar</button>
+
+                    </div>
+
+                </div>
             </form>
+
+            <div class="result-area">
+                <h1 id="result"></h1>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
